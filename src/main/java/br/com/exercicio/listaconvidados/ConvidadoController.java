@@ -43,7 +43,7 @@ public class ConvidadoController {
         convidadoService.salvar(convidado);
 
         /* MicroService para envio de e-mails desenvolvido por mim
-        * link: */
+        * link: https://github.com/lukkas-lax/MicroService_Envio_Email */
         new EmailService().enviar(nome,email);
 
         Iterable<Convidado> convidados = convidadoService.obterTodos();
